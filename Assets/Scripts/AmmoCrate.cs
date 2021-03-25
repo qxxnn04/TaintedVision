@@ -13,6 +13,6 @@ public class AmmoCrate : MonoBehaviour
 
     void Update()
     {
-     container.transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
+     container.transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
     }
 }
