@@ -17,16 +17,16 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   focusDistance:
-    overrideState: 0
-    value: 10
+    overrideState: 1
+    value: 10.15
   aperture:
-    overrideState: 0
-    value: 5.6
+    overrideState: 1
+    value: 28.1
   focalLength:
-    overrideState: 0
-    value: 50
+    overrideState: 1
+    value: 57.22
   kernelSize:
-    overrideState: 0
+    overrideState: 1
     value: 1
 --- !u!114 &-2881844432983802844
 MonoBehaviour:
@@ -102,16 +102,16 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.35
+    value: 0.55
   smoothness:
     overrideState: 1
-    value: 0.73
+    value: 1
   roundness:
     overrideState: 1
     value: 1
   rounded:
     overrideState: 1
-    value: 0
+    value: 1
   mask:
     overrideState: 1
     value: {fileID: 0}
