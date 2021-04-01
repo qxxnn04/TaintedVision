@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bullet
   - Ammo
+  - Battery
+  - collectable
   layers:
   - Default
   - TransparentFX

@@ -18,6 +18,6 @@ public class GameControllerScript : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        ammoText.text = "Ammo: " + player.Ammo;
+        ammoText.text = "Batteries: " + player.Score;
     }
 }

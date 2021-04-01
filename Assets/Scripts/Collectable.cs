@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AmmoCrate : MonoBehaviour
+public class Collectable : MonoBehaviour
 {
     [Header("Visuals")]
     public GameObject container;
     public float rotationSpeed = 180f;
 
     [Header("Gameplay")]
-    public int ammo = 12;
+    public int score = 1;
 
     void Update()
     {
