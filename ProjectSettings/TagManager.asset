@@ -8,6 +8,8 @@ TagManager:
   - Ammo
   - Battery
   - collectable
+  - jumpscare
+  - CrawlerTrigger
   layers:
   - Default
   - TransparentFX
