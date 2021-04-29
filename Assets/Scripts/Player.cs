@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
 
     public Enemy enemy;
 
+    public int endscore = 1;
+
     IEnumerator EndJump()
     {
         yield return new WaitForSeconds(2.03f);
@@ -41,7 +43,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      
+
         score = 0;
     }
 
@@ -91,7 +93,13 @@ public class Player : MonoBehaviour
 
         }
 
-
+    }
+    void Update()
+    {
+        if (score >= endscore)
+        {
+            SceneManager.LoadScene(sceneName: "menu");
+        }
     }
 }
 
