@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
 
     public Enemy enemy;
 
-    public int endscore = 1;
+    public int endscore = 11;
 
     IEnumerator EndJump()
     {
@@ -43,7 +43,6 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         score = 0;
     }
 
@@ -64,13 +63,6 @@ public class Player : MonoBehaviour
             Destroy(collectable.gameObject);
 
         }
-        if (collision.gameObject.tag == "Enemy")
-        {
-
-            SceneManager.LoadScene("menu");
-
-        }
-
 
         if (collision.gameObject.tag == "jumpscare")
         {
@@ -98,7 +90,7 @@ public class Player : MonoBehaviour
     {
         if (score >= endscore)
         {
-            SceneManager.LoadScene(sceneName: "menu");
+            SceneManager.LoadScene(sceneName: "endgame");
         }
     }
 }
