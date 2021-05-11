@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public GameObject ThePlayer;
     public GameObject JumpCam;
     public GameObject Crawler;
+    public GameObject lastdoor;
 
     public int score;
 
@@ -40,6 +41,8 @@ public class Player : MonoBehaviour
 
     }
 
+  
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +54,11 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+
+        if (collision.gameObject.tag == "endgame")
+        {
+            SceneManager.LoadScene(sceneName: "endgame");
+        }
 
         if (collision.gameObject.tag == "collectable")
         {
@@ -90,9 +98,11 @@ public class Player : MonoBehaviour
     {
         if (score >= endscore)
         {
-            SceneManager.LoadScene(sceneName: "endgame");
+           
         }
     }
+
+
 }
 
 
