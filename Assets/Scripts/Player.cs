@@ -75,7 +75,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "jumpscare")
         {
 
-            //Scream.Play();
+            Scream.Play();
             JumpCam.SetActive(true);
             //ThePlayer.SetActive(false);
             //FlashIng.SetActive(true);
