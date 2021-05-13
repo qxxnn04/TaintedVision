@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public GameObject JumpCam;
     public GameObject Crawler;
     public GameObject lastdoor;
+    public GameObject Red;
+    public GameObject Green;
 
     public int score;
 
@@ -21,7 +23,7 @@ public class Player : MonoBehaviour
 
     public Enemy enemy;
 
-    public int endscore = 11;
+    public int endscore = 2;
 
     IEnumerator EndJump()
     {
@@ -62,7 +64,7 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.tag == "collectable")
         {
-            Debug.Log("hit");
+            
 
             Collectable collectable = collision.gameObject.GetComponent<Collectable>();
 
@@ -86,7 +88,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "CrawlerTrigger")
         {
 
-            Debug.Log("hit");
+            
             Crawler.SetActive(true);
             //ThePlayer.SetActive(false);
             StartCoroutine(DeactivateEnemy());
@@ -98,7 +100,10 @@ public class Player : MonoBehaviour
     {
         if (score >= endscore)
         {
-           
+            Debug.Log("Finish");
+            Red.SetActive(false);
+            Green.SetActive(true);
+            lastdoor.SetActive(false);
         }
     }
 
