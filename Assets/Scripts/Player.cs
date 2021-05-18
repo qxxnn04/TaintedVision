@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
 
-        if (collision.gameObject.tag == "endgame")
+        if (collision.gameObject.tag == "Finish")
         {
             SceneManager.LoadScene(sceneName: "endgame");
         }

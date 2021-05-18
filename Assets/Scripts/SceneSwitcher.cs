@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Control : MonoBehaviour
+public class Continue : MonoBehaviour
 {
-    public void NextScene()
-    {
-        SceneManager.LoadScene("Main");
-    }
+   // public void NextScene()
+    //{
+     // SceneManager.LoadScene("Main");
+    //}
 }
